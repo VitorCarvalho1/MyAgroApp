@@ -5,38 +5,40 @@
 <main>
   <div class="container">
     <div class="cards">
-      <div class="card">
+      <div class="card" *ngFor="let cards of card">
           <ul>
               <li>
                 <div class="circle"><img src="./../../assets/perfil.png"></div>
-                <span>José</span>
+                <span>{{cards.nome}}</span>
                 <h2>Nome</h2>
               </li>
               <li>
                 <div class="circle"><img src="./../../assets/tiles.png"></div>
-
-                <span>1 alqueire</span>
+                <span>{{cards.area}}</span>
                 <h2>Área Total</h2>
               </li>
               <li>
                 <div class="circle"><img src="./../../assets/cityscape.png"></div>
-                <span>Tupã</span>
+                <span>{{cards.cidade}}</span>
                 <h2>Cidade</h2>
               </li>
+              <div class="remove">
+                <img src="../../assets/Vector (2).svg">
+              </div>
               <div class="align-li">
                 <li>
                   <div class="circle"><img src="./../../assets/new-year.png"></div>
-                  <span>2020</span>
+                  <span>{{cards.anoPlantio}}</span>
                   <h2>Ano plantio</h2>
                 </li>
                 <li>
                   <div class="circle"><img src="./../../assets/low-price.png"></div>
-                  <span>50mil</span>
+                  <span>{{cards.custos}}</span>
                   <h2>Custos</h2>
                 </li>
                 <li>
                   <div class="circle"><img src="./../../assets/weight-scale.png"></div>
-                  <span>1 tonelada</span>
+                  <span>{{cards.producao}}</span>
                   <h2>Produção</h2>
                 </li>
               </div>

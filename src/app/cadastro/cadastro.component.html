@@ -4,15 +4,15 @@
 </header>
   <div class="container">
     <main>
-        <div class="form-inputs">
-          <input type="text" placeholder="Nome">
-          <input type="text" placeholder="Área total">
-          <input type="text" placeholder="Cidade">
-          <input type="text" placeholder="Ano Plantio">
-          <input type="text" placeholder="Custos">
-          <input type="text" placeholder="Produção">
-          <button>Enviar</button>
-        </div>
+        <form [formGroup]="inputsCadastro" (submit)="enviar()" class="form-inputs">
+          <input formControlName="nome"  type="text" placeholder="Nome">
+          <input formControlName="area"type="text" placeholder="Área total">
+          <input formControlName="cidade" type="text" placeholder="Cidade">
+          <input formControlName="anoPlantio" type="text" placeholder="Ano Plantio">
+          <input formControlName="custos" type="text" placeholder="Custos">
+          <input formControlName="producao" type="text" placeholder="Produção">
+          <button (click)="vazio()">Enviar</button>
+        </form>
     </main>
   </div>
   <app-menu-footer></app-menu-footer>

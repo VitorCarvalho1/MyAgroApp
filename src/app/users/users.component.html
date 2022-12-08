@@ -1,2 +1,24 @@
+<header>
+    <img src="./../../assets/Logo.png">
+    <h1>Usuários <br> cadastrados</h1>
+</header>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cards of card">
+                <td>{{cards.nome}}</td>
+                <td>{{cards.cidade}}</td>
+                <td><img src="./../../assets/perfil.png"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <app-menu-footer></app-menu-footer>

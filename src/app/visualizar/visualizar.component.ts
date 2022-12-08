@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Visualizar } from './visualizar';
 import { VisualizarService } from './visualizar.service';

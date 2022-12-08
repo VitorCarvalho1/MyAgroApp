@@ -13,6 +13,7 @@ export class VisualizarService {
 
   private readonly API = `${API}/users`
 
+
   constructor(private http: HttpClient) { }
 
 

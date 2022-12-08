@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Visualizar } from './../visualizar/visualizar';
+import { VisualizarService } from './../visualizar/visualizar.service';
 
 @Component({
   selector: 'app-users',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  card:Visualizar[]=[]
+
+  constructor(private service: VisualizarService) { }
 
   ngOnInit(): void {
+    this.service.listarCards().subscribe((event)=>{
+      this.card = event.result as Visualizar[]
+      console.log(this.card)
+    })
   }
+
+ 
 
 }

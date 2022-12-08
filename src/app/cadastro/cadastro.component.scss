@@ -1,5 +1,13 @@
-.container {
 
+
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+  img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 main {
@@ -11,7 +19,6 @@ main {
     justify-content: center;
     gap: 10px;
     margin-top: 50px;
-
     input {
       padding: 15px 25px;
       border-radius: 5px;

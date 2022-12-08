@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    table{
+        width: 300px;
+        thead{
+            line-height: 40px;
+            height: 40px;
+            font-family: 'Poppins', sans-serif;
+            border-bottom: 1px solid grey;
+            font-size: 1.2rem;
+            color: var(--color-primary);
+        }
+        tbody{
+            tr{
+                position: relative;
+                width: 300px;
+                height: 80px;
+                line-height: 80px;
+                border-bottom: 1px solid rgb(189, 188, 188);
+                td{
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                td:nth-child(3) {
+                    position: absolute;
+                    left: 12px;
+                    top: 8px;
+                }
+            }
+        }
+    }
+}

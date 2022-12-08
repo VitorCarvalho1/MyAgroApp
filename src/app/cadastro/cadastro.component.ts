@@ -46,7 +46,7 @@ export class CadastroComponent implements OnInit {
   }
 
   vazio(){
-    this.router.navigate(['/visualizar']);
+    
   }
 
 }

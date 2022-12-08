@@ -10,9 +10,7 @@ const API = environment.API;
   providedIn: 'root'
 })
 
-
 export class CadastroService {
-
 
   private readonly API =  `${API}/users`
 
